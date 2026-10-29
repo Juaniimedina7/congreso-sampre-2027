@@ -140,6 +140,10 @@ export default function Home() {
 
       <Marquesina />
 
+      <section className="teaser" aria-label="Teaser del congreso">
+        <video src="/teaser-cimp-2027.mp4" controls playsInline preload="metadata" />
+      </section>
+
       <section className="seccion" id="ejes">
         <h2>Seis ejes, una misma escena</h2>
         <p className="seccion-bajada">El programa se arma junto a los comités científicos de SAMPRE.</p>
