@@ -1,4 +1,4 @@
-import { congreso, auspiciantes, ejes, actividades, cifras } from './datos';
+import { congreso, auspiciantes, ejes, actividades, cifras, aranceles } from './datos';
 
 const preinscripcion = `mailto:${congreso.email}?subject=${encodeURIComponent('Preinscripción CIMP 2027')}`;
 const auspiciar = `mailto:${congreso.email}?subject=${encodeURIComponent('Quiero auspiciar CIMP 2027')}`;
@@ -106,6 +106,7 @@ export default function Home() {
           <ul className="nav-links">
             <li><a href="#ejes">Ejes temáticos</a></li>
             <li><a href="#programa">Programa</a></li>
+            <li><a href="#aranceles">Aranceles</a></li>
             <li><a href="#trabajos">Trabajos científicos</a></li>
             <li><a href="#auspiciar">Auspiciar</a></li>
           </ul>
@@ -184,6 +185,30 @@ export default function Home() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="seccion" id="aranceles">
+        <h2>Aranceles</h2>
+        <p className="seccion-bajada">Los socios de SAMPRE residentes en Argentina se inscriben sin cargo. La tarifa anticipada vale hasta el 2 de febrero de 2027.</p>
+        <div className="tabla-envoltura">
+          <table className="aranceles">
+            <thead>
+              <tr><th scope="col">Categoría</th><th scope="col">Hasta el 2/2/2027</th><th scope="col">En el congreso</th></tr>
+            </thead>
+            <tbody>
+              {aranceles.map((a) => (
+                <tr key={a.categoria}>
+                  <th scope="row">{a.categoria}</th>
+                  <td>{a.anticipado ?? <span className="sin-dato">No aplica</span>}</td>
+                  <td>{a.insitu}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="aranceles-nota">
+          ¿Todavía no sos socio? <a href="https://www.sampre.com.ar/socios" target="_blank" rel="noopener noreferrer">Asociate a SAMPRE</a> y, si residís en Argentina, tu inscripción es sin cargo.
+        </p>
       </section>
 
       <section className="banner" id="trabajos">

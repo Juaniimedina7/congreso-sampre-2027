@@ -302,3 +302,15 @@ a { color: inherit; }
   .marquesina ul { animation: none; }
   .marquesina { overflow-x: auto; }
 }
+
+/* Aranceles */
+.tabla-envoltura { overflow-x: auto; border-radius: 10px; box-shadow: var(--sombra); }
+.aranceles { width: 100%; border-collapse: collapse; background: var(--blanco); text-align: left; font-size: 17px; }
+.aranceles th, .aranceles td { padding: 16px 24px; border-bottom: 1px solid var(--bruma); }
+.aranceles thead th { background: var(--tinta); color: #fff; font-weight: 500; font-size: 15px; }
+.aranceles tbody th { font-weight: 400; }
+.aranceles td { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.aranceles tbody tr:last-child > * { border-bottom: 0; }
+.sin-dato { font-weight: 400; color: var(--grafito); }
+.aranceles-nota { margin-top: 20px; font-size: 16px; color: var(--grafito); }
+.aranceles-nota a { color: var(--tinta); font-weight: 500; }

@@ -42,3 +42,12 @@ export const cifras = [
   { valor: 'Cada 2 años', etiqueta: 'el congreso oficial de SAMPRE' },
   { valor: 'Desde 2019', etiqueta: 'formando al sistema prehospitalario' },
 ];
+
+// `anticipado`: hasta el 2 de febrero de 2027. `null` = solo se abona en el congreso.
+export const aranceles = [
+  { categoria: 'Residentes argentinos socios de SAMPRE', anticipado: 'Sin cargo', insitu: 'Sin cargo' },
+  { categoria: 'Residentes argentinos no socios de SAMPRE', anticipado: '$ 100.000', insitu: '$ 120.000' },
+  { categoria: 'Residentes del exterior', anticipado: 'USD 80', insitu: 'USD 100' },
+  { categoria: 'Bomberos voluntarios argentinos', anticipado: null, insitu: '$ 60.000' },
+  { categoria: 'Estudiantes de carreras terciarias o universitarias afines', anticipado: null, insitu: '$ 60.000' },
+];
