@@ -124,7 +124,7 @@ export default function Home() {
             </p>
             <dl className="hero-datos">
               <div><dt>Cuándo</dt><dd>{congreso.fecha}</dd></div>
-              <div><dt>Dónde</dt><dd>{congreso.sede}</dd></div>
+              <div className="hero-dato-link"><dt>Dónde</dt><dd><a href="#sede">{congreso.sede}</a></dd></div>
             </dl>
             <div className="hero-acciones">
               <a className="btn-sol" href={preinscripcion}>Preinscribirme</a>

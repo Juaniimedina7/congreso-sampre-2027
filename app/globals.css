@@ -112,6 +112,11 @@ a { color: inherit; }
 }
 .hero-datos dt { font-size: 14px; color: var(--celeste-suave); }
 .hero-datos dd { margin: 0; font-weight: 500; }
+/* El link cubre toda la tarjeta para que funcione como botón. */
+.hero-datos .hero-dato-link { position: relative; border: 1px solid rgba(255, 255, 255, 0.35); transition: background 0.15s; }
+.hero-datos .hero-dato-link:hover { background: rgba(255, 255, 255, 0.16); }
+.hero-dato-link a { text-decoration: none; }
+.hero-dato-link a::after { content: ''; position: absolute; inset: 0; border-radius: 10px; }
 .hero-acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
 .nota { font-size: 14px; color: var(--celeste-suave); }
 
