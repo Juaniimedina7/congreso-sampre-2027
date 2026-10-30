@@ -4,7 +4,8 @@ export const congreso = {
   nombre: 'Congreso Internacional de Medicina Prehospitalaria',
   sigla: 'CIMP 2027',
   fecha: '21 y 22 de mayo de 2027',
-  sede: 'Buenos Aires Marriott, Av. 9 de Julio',
+  sede: 'Marriott Buenos Aires Downtown',
+  direccion: 'Carlos Pellegrini 551, San Nicolás, Ciudad Autónoma de Buenos Aires',
   email: 'info@sampre.com.ar',
 };
 

@@ -106,6 +106,7 @@ export default function Home() {
           <ul className="nav-links">
             <li><a href="#ejes">Ejes temáticos</a></li>
             <li><a href="#programa">Programa</a></li>
+            <li><a href="#sede">Sede</a></li>
             <li><a href="#aranceles">Aranceles</a></li>
             <li><a href="#trabajos">Trabajos científicos</a></li>
             <li><a href="#auspiciar">Auspiciar</a></li>
@@ -185,6 +186,18 @@ export default function Home() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="seccion" id="sede">
+        <h2>{congreso.sede}</h2>
+        <p className="seccion-bajada">{congreso.direccion}</p>
+        <iframe
+          className="mapa"
+          title={`Mapa: ${congreso.sede}`}
+          src={`https://www.google.com/maps?q=${encodeURIComponent(`${congreso.sede}, ${congreso.direccion}`)}&output=embed`}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </section>
 
       <section className="seccion" id="aranceles">
