@@ -1,8 +1,8 @@
-import { congreso, auspiciantes, ejes, actividades, cifras, aranceles } from './datos';
+import { congreso, auspiciantes, ejes, actividades, cifras, aranceles, autoridades } from './datos';
 
-const preinscripcion = `mailto:${congreso.email}?subject=${encodeURIComponent('Preinscripción CIMP 2027')}`;
-const auspiciar = `mailto:${congreso.email}?subject=${encodeURIComponent('Quiero auspiciar CIMP 2027')}`;
-const trabajos = `mailto:${congreso.email}?subject=${encodeURIComponent('Trabajos científicos CIMP 2027')}`;
+const preinscripcion = `mailto:${congreso.email}?subject=${encodeURIComponent('Preinscripción SAMPRE 2027')}`;
+const auspiciar = `mailto:${congreso.email}?subject=${encodeURIComponent('Quiero auspiciar SAMPRE 2027')}`;
+const trabajos = `mailto:${congreso.email}?subject=${encodeURIComponent('Trabajos científicos SAMPRE 2027')}`;
 
 function Estrella({ size = 200, sol = true }) {
   // Estrella de la vida con la franja celeste-blanca-celeste y el sol de mayo, como en el logo.
@@ -183,6 +183,18 @@ export default function Home() {
           {actividades.map((a) => (
             <article className="tarjeta tarjeta-simple" key={a.titulo}>
               <h3>{a.titulo}</h3><p>{a.texto}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="seccion" id="autoridades">
+        <h2>Autoridades</h2>
+        <div className="autoridades">
+          {autoridades.map((c) => (
+            <article className="tarjeta tarjeta-simple" key={c.comite}>
+              <h3>{c.comite}</h3>
+              <ul>{c.integrantes.map((n) => <li key={n}>{n}</li>)}</ul>
             </article>
           ))}
         </div>

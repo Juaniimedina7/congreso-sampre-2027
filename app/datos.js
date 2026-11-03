@@ -1,8 +1,8 @@
 // Todo el contenido editable del congreso vive acá.
 
 export const congreso = {
-  nombre: 'Congreso Internacional de Medicina Prehospitalaria',
-  sigla: 'CIMP 2027',
+  nombre: 'Congreso de Medicina Prehospitalaria',
+  sigla: 'SAMPRE 2027',
   fecha: '21 y 22 de mayo de 2027',
   sede: 'Marriott Buenos Aires Downtown',
   direccion: 'Carlos Pellegrini 551, San Nicolás, Ciudad Autónoma de Buenos Aires',
@@ -38,7 +38,7 @@ export const actividades = [
 ];
 
 export const cifras = [
-  { valor: '+1000', etiqueta: 'participantes en CIMP 2025' },
+  { valor: '+1000', etiqueta: 'participantes en el congreso 2025' },
   { valor: '22', etiqueta: 'comités científicos' },
   { valor: 'Cada 2 años', etiqueta: 'el congreso oficial de SAMPRE' },
   { valor: 'Desde 2019', etiqueta: 'formando al sistema prehospitalario' },
@@ -51,4 +51,9 @@ export const aranceles = [
   { categoria: 'Residentes del exterior', anticipado: 'USD 80', insitu: 'USD 100' },
   { categoria: 'Bomberos voluntarios argentinos', anticipado: null, insitu: '$ 60.000' },
   { categoria: 'Estudiantes de carreras terciarias o universitarias afines', anticipado: null, insitu: '$ 60.000' },
+];
+
+export const autoridades = [
+  { comite: 'Comité organizador', integrantes: ['William Medina', 'Lucas Henkel', 'Débora Vizcaino', 'Leonardo Manino'] },
+  { comite: 'Comité científico', integrantes: ['Cristian Bottari', 'Ivana Noguera', 'Gabriel Sosa', 'Luciano Gandini', 'Silvio Aguilera', 'Adrián Scheneider'] },
 ];
