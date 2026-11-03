@@ -55,5 +55,5 @@ export const aranceles = [
 
 export const autoridades = [
   { comite: 'Comité organizador', integrantes: ['William Medina', 'Lucas Henkel', 'Débora Vizcaino', 'Leonardo Manino'] },
-  { comite: 'Comité científico', integrantes: ['Cristian Bottari', 'Ivana Noguera', 'Gabriel Sosa', 'Luciano Gandini', 'Silvio Aguilera', 'Adrián Scheneider'] },
+  { comite: 'Comité científico', integrantes: ['Cristian Bottari', 'Ivana Noguera', 'Gabriel Sosa', 'Luciano Gandini', 'Silvio Aguilera', 'Adrián Schneider'] },
 ];
